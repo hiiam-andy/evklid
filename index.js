@@ -1,10 +1,11 @@
-var swiper = new Swiper('.swiper-container', {
-  autoplay: {
-      delay: 4000,
-  }, 
+new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: true,
   pagination: {
       el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+          return `<button class="btn btn_round ${className}" aria-label="Переключение слайда"></button>`
+      }
   },
-  allowTouchMove: true,
-  loop: true,
 });
