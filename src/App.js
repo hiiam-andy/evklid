@@ -1,225 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');</style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+import React from "react";
+import './styles/normalize.css'
+import './styles/style.css'
 
-</head>
-
-<body>
-   <header class="section-header container">
-        <a href="" class="section-header__logo logo"></a>
-        <div class="test">
-            <ul class="section-header__nav">
-                <li class="section-header__item">
-                    <a href="" class="section-header__link">О нас</a> </li>
-                <li class="section-header__item">
-                    <a href="" class="section-header__link">Проекты</a> </li>
-                <li class="section-header__item"> 
-                   <a href="" class="section-header__link">Этапы</a> </li>
-                <li class="section-header__item">
-                    <a href="" class="section-header__link">Отзывы</a> </li>
-                <li class="section-header__item">
-                    <a href="" class="section-header__link">Контакты</a> </li>
+function App() {
+  return (
+    <>
+       <header className="section-header container">
+        <a href="1234" className="section-header__logo logo"></a>
+        <div className="test">
+            <ul className="section-header__nav">
+                <li className="section-header__item">
+                    <a href="1234" className="section-header__link">О нас</a> </li>
+                <li className="section-header__item">
+                    <a href="1234" className="section-header__link">Проекты</a> </li>
+                <li className="section-header__item"> 
+                   <a href="1234" className="section-header__link">Этапы</a> </li>
+                <li className="section-header__item">
+                    <a href="1234" className="section-header__link">Отзывы</a> </li>
+                <li className="section-header__item">
+                    <a href="1234" className="section-header__link">Контакты</a> </li>
             </ul>
-                <a href="" class="header__search">
-                    <svg class="header__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="1234" className="header__search">
+                    <svg className="header__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
                         <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
                         </svg>
-                        
                 </a>
         </div>
    </header> 
    <main>
-    <div class="section-hero container">
-        <div class="section-hero__info">
-            <h2 class="section-hero__heading">Проектные решения любой сложности</h2>
-            <p class="section-hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-            <a href="" class="section-hero__btn btn">Заказать расчёт</a>
+    <div className="section-hero container">
+        <div className="section-hero__info">
+            <h2 className="section-hero__heading">Проектные решения любой сложности</h2>
+            <p className="section-hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+            <a href="1234" className="section-hero__btn btn">Заказать расчёт</a>
         </div>
-        <div class="swiper-container" style="position:absolute">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide1"></div>
-                <div class="swiper-slide slide2"></div>
-                <div class="swiper-slide slide3"></div>
+        <div className="swiper-container" style={{position:'absolute'}}>
+            <div className="swiper-wrapper">
+                <div className="swiper-slide slide1"></div>
+                <div className="swiper-slide slide2"></div>
+                <div className="swiper-slide slide3"></div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div className="swiper-pagination"></div>
         </div>
         <script src="js/swiper.js"></script>
     </div>
-    <div class="section-about container">
-        <div class="section-about__info">
-            <h1 class="section-about__heading heading">О нас</h1>
-            <p class="section-about__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <div className="section-about container">
+        <div className="section-about__info">
+            <h1 className="section-about__heading heading">О нас</h1>
+            <p className="section-about__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
         </div>
-        <div class="section-about__content">
-            <div class="section-about__big-card">
-                        <p class="big-card__text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов. 
-                            <a href="" class="big-card__btn">Подробнее</a></p>                
+        <div className="section-about__content">
+            <div className="section-about__big-card">
+                        <p className="big-card__text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов. 
+                            <a href="1234" className="big-card__btn">Подробнее</a></p>                
             </div>
-            <div class="section-about__small-cards">
-                    <div class="section-about__small-card small-card1">
-                        <div class="section-about__small-card-text">
-                            <h2 class="section-about__small-card-heading">Консультация с широким активом</h2>
-                            <div class="section-about__small-card-text">А также свежий взгляд на привычные вещи - 
+            <div className="section-about__small-cards">
+                    <div className="section-about__small-card small-card1">
+                        <div className="section-about__small-card-text">
+                            <h2 className="section-about__small-card-heading">Консультация с широким активом</h2>
+                            <div className="section-about__small-card-text">А также свежий взгляд на привычные вещи - 
                                 безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</div>
                         </div>
                     </div>
-                    <div class="section-about__small-card small-card2">
-                        <div class="section-about__small-card-text">
-                            <h2 class="section-about__small-card-heading">В своём стремлении повысить </h2>
-                            <p class="section-about__small-card-text">Качество жизни, они забывают, 
+                    <div className="section-about__small-card small-card2">
+                        <div className="section-about__small-card-text">
+                            <h2 className="section-about__small-card-heading">В своём стремлении повысить </h2>
+                            <p className="section-about__small-card-text">Качество жизни, они забывают, 
                                 что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. </p>
                         </div>
                     </div>
             </div>
         </div>
     </div>
-    <div class="section-work container">
-        <h1 class="section-work__heading heading">Как мы работаем</h1>
-        <ul class="section-work__nav">
-            <li><a href="" class="work-btn">1 шаг</a></li>
-            <li><a href="" class="work-btn">2 шаг</a></li>
-            <li><a href="" class="work-btn">3 шаг</a></li>
-            <li><a href="" class="work-btn">4 шаг</a></li>
+    <div className="section-work container">
+        <h1 className="section-work__heading heading">Как мы работаем</h1>
+        <ul className="section-work__nav">
+            <li><a href="1234" className="work-btn">1 шаг</a></li>
+            <li><a href="1234" className="work-btn">2 шаг</a></li>
+            <li><a href="1234" className="work-btn">3 шаг</a></li>
+            <li><a href="1234" className="work-btn">4 шаг</a></li>
         </ul>
-        <div class="section-work__slide work-slide1">
-            <div class="section-work__description">
-                <h3 class="work-slide__heading">Проводим консультацию</h3>
-                <p class="work-slide__text">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-                <a href="" class="work-slide_btn1 btn">Подробнее</a>
-                <a href="" class="work-slide_btn2 btn">Договор</a>
+        <div className="section-work__slide work-slide1">
+            <div className="section-work__description">
+                <h3 className="work-slide__heading">Проводим консультацию</h3>
+                <p className="work-slide__text">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                <a href="1234" className="work-slide_btn1 btn">Подробнее</a>
+                <a href="1234" className="work-slide_btn2 btn">Договор</a>
             </div>
-            <div class="section-work-right">
-                <img src="/img/how1.jpg" alt="консультация" class="section-work-right__img">
+            <div className="section-work-right">
+                <img src="./img/how1.jpg" alt="консультация" className="section-work-right__img"/>
             </div>
         </div>
     </div>
-    <div class="section-questions container">
-        <h1 class="section-questions__heading heading">
+    <div className="section-questions container">
+        <h1 className="section-questions__heading heading">
             Часто задаваемые вопросы
         </h1>
-        <div class="accordion" id="accordion">
+        <div className="accordion" id="accordion">
 
-            <a href="" class="accordion__heading">Из чего формируется конечная стоимость проекта?
-                <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="1234" className="accordion__heading">Из чего формируется конечная стоимость проекта?
+                <svg className="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
                 </svg>
                 
             </a>
             
-            <div class="accordion__item">
-              <p class="accordion__text p1">
+            <div className="accordion__item">
+              <p className="accordion__text p1">
                 Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас 
                 к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
                 Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
-                <p class="accordion__text">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определённых слоёв населения, 
+                <p className="accordion__text">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определённых слоёв населения, 
                     а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, 
                     а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
               </p>
             </div>
-            <a href="" class="accordion__heading p2">У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-                <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="1234" className="accordion__heading p2">У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+                <svg className="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
                 </svg>
             </a>
-            <div class="accordion__item">
-              <p class="accordion__text">
+            <div className="accordion__item">
+              <p className="accordion__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim eligendi officiis fugit? Nobis officia a, iste vitae sequi ipsum, possimus, omnis tempora perferendis odit tenetur facilis porro amet. Vero.
               </p>
             </div>
-            <a href="" class="accordion__heading">Я выбираю между разными компаниями. В чём ваше отличие?
-                <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="1234" className="accordion__heading">Я выбираю между разными компаниями. В чём ваше отличие?
+                <svg className="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
                     </svg>
                 </a>
-            <div class="accordion__item">
-              <p class="accordion__text">
+            <div className="accordion__item">
+              <p className="accordion__text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt obcaecati ratione, quos laboriosam eum voluptate molestiae, similique aperiam dicta beatae voluptas aliquam ea porro eos? Necessitatibus natus nihil temporibus vel.
               </p>
             </div>
-            <a href="" class="accordion__heading">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
-                <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="1234" className="accordion__heading">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
+                <svg className="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
                     </svg>
                 </a>
-            <div class="accordion__item">
-              <p class="accordion__text">
+            <div className="accordion__item">
+              <p className="accordion__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro dolor sequi, recusandae sunt doloribus sapiente placeat laborum natus molestias temporibus praesentium labore nesciunt? Iusto sed ratione soluta dolor nihil.
               </p>
             </div>
-            <a href="" class="accordion__heading">Могу ли я вернуть деньги на каком-либо из этапов работ?
-                <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="1234" className="accordion__heading">Могу ли я вернуть деньги на каком-либо из этапов работ?
+                <svg className="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
                     </svg>
                 </a>
-            <div class="accordion__item">
-              <p class="accordion__text">
+            <div className="accordion__item">
+              <p className="accordion__text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit consequatur neque temporibus hic aspernatur vero voluptatem voluptates ullam illo error, quidem rerum, eum alias porro nisi soluta, fuga aliquam esse?
               </p>
             </div>
           </div>
-        <div class="wrapper">
+        <div className="wrapper">
 
         </div>
         <script src="js/accordion.js"></script>
     </div>
    </main>
-   <footer class="footer">
-    <div class="footer__left">
-        <a href="" class="footer__logo logo"></a>
-        <ul class="footer__nav">
-            <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">О нас</a>
+   <footer className="footer">
+    <div className="footer__left">
+        <a href="1234" className="footer__logo logo"></a>
+        <ul className="footer__nav">
+            <li className="footer__nav-item">
+                <a href="1234" className="footer__nav-link">О нас</a>
             </li>
-            <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">Проекты</a>
+            <li className="footer__nav-item">
+                <a href="1234" className="footer__nav-link">Проекты</a>
             </li>
-            <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">Отзывы</a>
+            <li className="footer__nav-item">
+                <a href="1234" className="footer__nav-link">Отзывы</a>
             </li>
-            <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">Договор оферты</a>
+            <li className="footer__nav-item">
+                <a href="1234" className="footer__nav-link">Договор оферты</a>
             </li>
-            <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">Договор подряда</a>
+            <li className="footer__nav-item">
+                <a href="1234" className="footer__nav-link">Договор подряда</a>
             </li>
-            <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">Конфиденциальность</a>
+            <li className="footer__nav-item">
+                <a href="1234" className="footer__nav-link">Конфиденциальность</a>
             </li>
-            <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">партнёрское соглашение</a>
+            <li className="footer__nav-item">
+                <a href="1234" className="footer__nav-link">партнёрское соглашение</a>
             </li>
         </ul>
-       <div class="footer__social">
-           <a href="" class="footer__social-link fb">
+       <div className="footer__social">
+           <a href="1234" className="footer__social-link fb">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30 0C13.5 0 0 13.5241 0 30.1807C0 45.241 10.98 57.741 25.32 60V38.9157H17.7V30.1807H25.32V23.5241C25.32 15.9639 29.79 11.8072 36.66 11.8072C39.93 11.8072 43.3499 12.3795 43.3499 12.3795V19.8193H39.57C35.85 19.8193 34.68 22.1386 34.68 24.5181V30.1807H43.0199L41.6699 38.9157H34.68V60C41.7493 58.8791 48.1866 55.2576 52.8297 49.7893C57.4729 44.3211 60.016 37.3664 59.9999 30.1807C59.9999 13.5241 46.4999 0 30 0Z" fill="#7C7C7C"/>
                 </svg>
            </a>
-           <a href="" class="footer__social-link vk">
+           <a href="1234" className="footer__social-link vk">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z" fill="#7C7C7C"/>
                 </svg>
            </a>
-           <a href="" class="footer__social-link instagram">
+           <a href="1234" className="footer__social-link instagram">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_166612_3111)">
                 <path d="M24.2578 30C24.2578 33.1714 26.8286 35.7422 30 35.7422C33.1714 35.7422 35.7422 33.1714 35.7422 30C35.7422 26.8286 33.1714 24.2578 30 24.2578C26.8286 24.2578 24.2578 26.8286 24.2578 30Z" fill="#7C7C7C"/>
@@ -235,24 +221,27 @@
            </a>
        </div>
     </div>
-    <div class="footer__center">
-        <h3 class="footer__center-heading">Оставить заявку</h3>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="footer__form">
-            <input type="text" name="name" placeholder="Фамилия, имя и отчество *" id="name" class="footer__field in-name">
-            <input type="email" name="email" placeholder="E-mail*" class="footer__field in-mail">
-            <textarea type="text" name="message" placeholder="Сообщение" cols="40" rows="3" class="footer__field in-message"></textarea>
-            <div class="footer__application">
-                <button type="submint" class="footer__btn">
+    <div className="footer__center">
+        <h3 className="footer__center-heading">Оставить заявку</h3>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" className="footer__form">
+            <input type="text" name="name" placeholder="Фамилия, имя и отчество *" id="name" className="footer__field in-name"/>
+            <input type="email" name="email" placeholder="E-mail*" className="footer__field in-mail"/>
+            <textarea type="text" name="message" placeholder="Сообщение" cols="40" rows="3" className="footer__field in-message"></textarea>
+            <div className="footer__application">
+                <button type="submint" className="footer__btn">
                     Отправить данные
                 </button>
-                <input type="checkbox" name="check" class="check"><span class="checkbox-text">Согласен на обработку данных</span>  
+                <input type="checkbox" name="check" className="check"/><span className="checkbox-text">Согласен на обработку данных</span>  
             </div>
 
         </form>
     </div>
-    <p class="footer__right">
+    <p className="footer__right">
         Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. 
     </p>
    </footer>
-</body>
-</html>
+    </>
+  );
+}
+
+export default App;
