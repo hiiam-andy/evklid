@@ -1,0 +1,83 @@
+.sectionWork{
+  max-width: 1770px;
+  margin-bottom: 100px;
+}
+.heading{
+  margin-bottom: 51px;
+  font-size: 48px;
+  line-height: 58.51px;
+  font-weight: 400;
+  color:#333
+}
+.navigation{
+  display:flex;
+  margin-bottom: 47px;
+}
+.workBtn{
+  margin-right: 86px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
+}
+.workBtn:hover{
+  color:#ff9900
+}
+.slider{
+  display: flex;
+  justify-content: space-between;
+}
+.slide__description{
+  width: 50%;
+  max-width: 760px;
+}
+.slide__heading{
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.slide__text{
+  margin-bottom: 48px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color:#333
+
+}
+.right{
+  padding-top: 8px;
+  display: flex;
+  width: 49%;
+}
+.image{
+  min-height: 460px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.btnMore{
+  margin-right: 26px;
+  padding:20px 39px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color:#FFFFFF;
+  background-color: #ff9900;
+}
+.btnMore:hover{
+  background-color: #F7B045;
+}
+.btnContract{
+  padding:20px 37px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color:#333;
+  border: 1px solid #333;
+}
+.btnContract:hover{
+  color: #FFFFFF;
+  background-color: #666;
+}

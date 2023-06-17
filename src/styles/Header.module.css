@@ -1,0 +1,52 @@
+.sectionHeader{
+  margin:0;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 75px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  background-image: url(../img/Logo.svg);  
+  width: 224px;
+  height: 72px;
+}
+.test{
+  display: flex;
+  align-items: center;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+}
+.link{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color:#333
+}
+.item:not(:first-child){
+  margin-left:84px;
+}
+.link:hover{
+  border-bottom: 2px solid #ff9900;
+}
+.link:active{
+  color: #e1670e;
+  border-bottom: 2px solid #e1670e;
+}
+.search{
+  margin-left: 85px;
+}
+.searchIcon{
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  
+}
+.search:hover .searchIcon path{
+  stroke: #ff9900;
+}
+.search:hover .searchIcon rect{
+  fill: #ff9900;
+}

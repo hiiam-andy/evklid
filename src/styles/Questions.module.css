@@ -1,0 +1,62 @@
+.sectionQuestions{
+  max-width: 1770px;
+  margin-bottom: 100px;
+}
+.heading{
+  margin-bottom: 43px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58.51px;
+}
+.accordion{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item{
+  width:100%;
+  
+}
+
+.title{
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  
+}
+.title:hover{
+  border-top: 1px solid #ff9900;
+  border-bottom: 1px solid #ff9900;
+  cursor: pointer;
+  color:#ff9900;
+}
+
+.title:hover svg ellipse{
+  fill:#ff9900
+}
+.title:hover svg path{
+  fill: #fff
+}
+
+.content{
+  max-width: 1003px;
+  border:none; /*бордер текста*/
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.accordion__imgDisabled{
+  rotate: 0;
+  transition: all .3s ease;
+}
+.accordion__imgActive{
+  rotate: 45deg;
+  transition: all .3s ease;
+}

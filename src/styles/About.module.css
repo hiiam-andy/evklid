@@ -1,0 +1,94 @@
+.sectionAbout{
+  max-width: 1770px;
+  margin-bottom: 100px;
+}
+.info{
+  margin-bottom: 50px;
+}
+.heading{
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 58.51px;
+  font-weight: 400;
+  color:#333
+}
+.text{
+  max-width: 1235px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.content{
+  display: flex;
+}
+.bigCard{
+  margin-right: 32px;
+  display:flex;
+  background-image: url(../img/about1.png);
+  width: 50%;
+  max-width: 868px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bigCard__text{
+  display: flex;
+  align-items: center;
+  padding:50px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  margin-top: 426px;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.5);
+}
+.bigCard__btn{
+  margin-left: 18%;
+  padding:18px 35px;
+  border: 3px solid #ff9900;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: transparent;
+  cursor: pointer;
+}
+.bigCard__btn:hover{
+  background-color: #ff9900;
+}
+.smallCards{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.smallCard{
+  border: 1px solid #CACACA;
+  background-repeat: no-repeat;
+  background-position: 8.3% 48%;
+  background-size: 22%;
+  padding:7% 10.4% 7.3% 34.4%;
+}
+.cardTop{
+  background-image: url(../img/about2.svg);
+  margin-bottom: 20px;
+}
+.cardBottom{
+  background-image: url(../img/about3.svg);
+}
+.smallCard__heading{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.smallCard__text{
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}

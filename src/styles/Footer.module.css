@@ -1,0 +1,118 @@
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 75px;
+  background-color: #222;
+}
+.footer__left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 134px;
+}
+.footer__logo{
+  margin-bottom: 20px;
+  background-image: url(../img/Logo-footer.svg);
+}
+.footer__nav{
+  margin-bottom: 90px;
+}
+.footer__nav-link{
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  color:#CACACA
+}
+.footer__nav-link:hover{
+  color:#ff9900;
+}
+.footer__social{
+  display:flex;
+}
+.footer__social-link{
+  width:60px;
+  height:60px;
+  margin-right: 25px;
+}
+.footer__social .footer__social-link:hover path{
+  fill:#ff9900;
+}
+.instagram{
+  margin:0;
+}
+
+.footer__center{
+  max-width: 570px;
+}
+.footer__field{
+  margin-bottom: 25px;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 60px;
+  background-color: #414141;
+  color: #FFFFFF;
+}
+.in-message{
+  margin-bottom: 34px;
+  padding-top: 14px;
+  height: 150px;
+  resize:none;
+}
+.footer__field::placeholder{
+  justify-content: start;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color:#cacaca;
+}
+.footer__field:hover{
+  background-color: #666;
+}
+.footer__center-heading{
+  font-size: 48px;
+  line-height: 58.51px;
+  font-weight: 400;
+  color: #CACACA;
+  margin-bottom: 25px;
+}
+.footer__form{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__application{
+  display: flex;
+  align-items: center;
+}
+.check{
+  margin-right: 2px;
+  border: 1px solid #cacaca;
+}
+.checkbox-text{
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #CACACA;
+}
+.footer__btn{
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 19px 53px;
+  margin-right: 22px;
+  color: #fff;
+  background-color: #ff9900;
+}
+.footer__btn:hover{
+  background-color: #F7B045;
+}
+.footer__right{
+  margin-left: 21px;
+  max-width: 362px;
+  padding-top: 88px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #CACACA;
+}
