@@ -12,7 +12,7 @@ export default function About() {
     <div className={style.content}>
         <div className={style.bigCard}>
                     <p className={style.bigCard__text}>Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов. 
-                        <button href="1234" className={style.bigCard__btn}>Подробнее</button></p>                
+                        <button className={style.bigCard__btn}>Подробнее</button></p>                
         </div>
         <div className={style.smallCards}>
                 <div className={style.smallCard}>

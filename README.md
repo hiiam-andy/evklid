@@ -1,1 +1,1 @@
-переделываю проект Skillbox с html/scc на react
+переделываю проект Skillbox с html/scc на react ради забавы

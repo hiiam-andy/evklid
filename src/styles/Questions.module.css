@@ -1,5 +1,6 @@
 .sectionQuestions{
   max-width: 1770px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 .heading{
@@ -23,8 +24,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 38px;
-  padding-bottom: 38px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
