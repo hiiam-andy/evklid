@@ -61,3 +61,28 @@
   rotate: 45deg;
   transition: all .3s ease;
 }
+
+@media(max-width:1830px){
+  .sectionQuestions{
+    margin: 0 10px;
+  }
+}
+
+@media(max-width:1034px){
+  .title{
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+@media(max-width:330px){
+  .heading{
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+  .title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

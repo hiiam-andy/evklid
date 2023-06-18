@@ -62,6 +62,9 @@
 .bigCard__btn:hover{
   background-color: #ff9900;
 }
+.bigCard__btn:active{
+  background-color: #e1670e;
+}
 .smallCards{
   display: flex;
   width: 50%;
@@ -92,4 +95,69 @@
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
+}
+
+@media(max-width:1830px){
+  .sectionAbout{
+    margin: 0 10px;
+  }
+}
+@media(max-width:1250px){
+  .content{
+    flex-direction: column;
+  }
+  .bigCard{
+    width: 100%;
+    margin-left: 0;
+    max-width: 1250px;
+    background-position:top;
+  }
+  .smallCards{
+    width: 100%;
+  }
+
+}
+
+@media(max-width:1034px){
+  
+}
+
+
+@media(max-width:778px){
+
+}
+
+@media(max-width:330px){
+  .heading{
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+  .text{
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .bigCard__text{
+    flex-direction: column;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .bigCard__btn{
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  .smallCard{
+    padding: 100px 0 0 0;
+    border: none;
+  }
+  .smallCard__heading{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .smallCard__text{
+    font-size: 14px;
+    line-height: 28px;
+  }
 }

@@ -1,12 +1,16 @@
 .sectionHeader{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 14px 75px;
   background: #FFFFFF;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
+.hamburger{
+  cursor: pointer;
+  display: none;
+}
 .logo{
-  background-image: url(../img/Logo.svg);  
   width: 224px;
   height: 72px;
   cursor: pointer;
@@ -27,7 +31,7 @@
   margin-left:84px;
 }
 .link:first-child{
-  margin: 0;
+  margin-left: 10px;
 }
 
 .link:hover{
@@ -54,9 +58,19 @@
 }
 
 
-
-@media(max-width:1024px){
+@media(max-width:1034px){
+  .sectionHeader{
+    height: 100px;
+  }
   .navigation{
     display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .logo { 
+    align-items: center;
+    width:150px;
+    height: 48px;
   }
 }

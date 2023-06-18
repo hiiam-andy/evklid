@@ -8,7 +8,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import HowWeWorks from "./components/HowWeWorks";
 import Questions from "./components/Questions/Questions";
-import Footer from "./components/Footer";
+import Footer from "./components//Footer/Footer";
 
 function App() {
   return (

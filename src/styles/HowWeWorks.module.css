@@ -1,7 +1,7 @@
 .sectionWork{
   max-width: 1770px;
   margin: 0 auto;
-  margin-bottom: 103px;
+  margin-bottom: 99px;
 }
 .heading{
   margin-bottom: 51px;
@@ -12,9 +12,9 @@
 }
 .navigation{
   display:flex;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
 }
-.workBtn{
+.stepBtn{
   margin-right: 86px;
   font-size: 18px;
   line-height: 1;
@@ -22,8 +22,11 @@
   color: #333;
   cursor: pointer;
 }
-.workBtn:hover{
+.stepBtn:hover{
   color:#ff9900
+}
+.stepBtn:active{
+  color: #e1670e;
 }
 .slider{
   display: flex;
@@ -40,7 +43,7 @@
   font-weight: 700;
 }
 .slide__text{
-  margin-bottom: 71px;
+  margin-bottom: 50px;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -66,9 +69,14 @@
   font-weight: 700;
   color:#FFFFFF;
   background-color: #ff9900;
+  border: none;
+  cursor: pointer;
 }
 .btnMore:hover{
   background-color: #F7B045;
+}
+.btnMore:active{
+  background-color: #e1670e;
 }
 .btnContract{
   padding:20px 37px;
@@ -77,8 +85,65 @@
   font-weight: 400;
   color:#333;
   border: 1px solid #333;
+  background-color: transparent;
+  cursor: pointer;
 }
 .btnContract:hover{
   color: #FFFFFF;
   background-color: #666;
+}
+.btnContract:active{
+  color: #FFFFFF;
+  background-color: #000;
+}
+
+@media(max-width:1830px){
+  .sectionWork{
+    margin: 0 10px;
+  }
+}
+
+@media(max-width:1034px){
+  
+}
+
+@media(max-width:950px){
+  .navigation{
+    justify-content: space-between;
+  }
+  .slider{
+    flex-direction: column-reverse;
+  }
+  .slide__description{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+}
+
+@media(max-width:330px){
+  .heading{
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+  .stepBtn{
+    margin-right: 0;
+  }
+  .slide__heading{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .slide__text{
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .btnMore{
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  .btnContract{
+    font-size: 12px;
+    line-height: 14.63px;
+  }
 }
