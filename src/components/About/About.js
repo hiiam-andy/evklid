@@ -1,6 +1,7 @@
 import React from 'react'
 
-import style from '../styles/About.module.css'
+import style from '../../styles/About.module.css'
+import SmallCard from './SmallCard'
 
 export default function About() {
   return (
@@ -11,24 +12,21 @@ export default function About() {
     </div>
     <div className={style.content}>
         <div className={style.bigCard}>
-                    <p className={style.bigCard__text}>Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов. 
-                        <button className={style.bigCard__btn}>Подробнее</button></p>                
+          <p className={style.bigCard__text}>Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов. 
+            <button className={style.bigCard__btn}>Подробнее</button></p>                
         </div>
         <div className={style.smallCards}>
-                <div className={style.smallCard}>
-                    <div className={style.smallCard__text}>
-                        <h2 className={style.smallCard__heading}>Консультация с широким активом</h2>
-                        <div className={style.smallCard__text}>А также свежий взгляд на привычные вещи - 
-                            безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</div>
-                    </div>
-                </div>
-                <div className={style.smallCard}>
-                    <div className={style.smallCard__text}>
-                        <h2 className={style.smallCard__heading}>В своём стремлении повысить </h2>
-                        <p className={style.smallCard__text}>Качество жизни, они забывают, 
-                            что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. </p>
-                    </div>
-                </div>
+          <SmallCard
+            title='Консультация с широким активом'
+            body='А также свежий взгляд на привычные вещи - 
+            безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений'
+          />
+          <SmallCard
+            title='В своём стремлении повысить'
+            body='Качество жизни, они забывают, 
+            что сплочённость команды профессионалов представляет собой 
+            интересный эксперимент проверки прогресса профессионального сообщества.'
+            />
         </div>
     </div>
 </div>

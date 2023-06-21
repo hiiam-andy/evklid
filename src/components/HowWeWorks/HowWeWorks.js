@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from '../styles/HowWeWorks.module.css'
+import style from '../../styles/HowWeWorks.module.css'
 
 export default function HowWeWorks() {
   return (

@@ -110,6 +110,7 @@
 @media(max-width:950px){
   .navigation{
     justify-content: space-between;
+    margin-right: 0;
   }
   .slider{
     flex-direction: column-reverse;
