@@ -13,8 +13,7 @@ export default function Header() {
   const [isShowMenu,setIsShowMenu] = useState(false)
   const [isShowSearch, setIsShowSearch] = useState(false)
 
-  const showMenu = (e) => {
-    e.stopPropagation()
+  const showMenu = () => {
     setIsShowMenu(!isShowMenu)
   }
 
