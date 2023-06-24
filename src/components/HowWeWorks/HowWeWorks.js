@@ -6,20 +6,45 @@ import HowWeWorkItem from "./HowWeWorkItem";
 
 export default function HowWeWorks() {
   const [step, setStep] = useState("step1");
+
   let res = "";
 
   switch (step) {
     case "step1":
-      res = <HowWeWorkItem title={stepOne.title} body={stepOne.body} />;
+      res = (
+        <HowWeWorkItem
+          title={stepOne.title}
+          body={stepOne.body}
+          image={stepOne.image}
+        />
+      );
       break;
     case "step2":
-      res = <HowWeWorkItem title={stepTwo.title} body={stepTwo.body} />;
+      res = (
+        <HowWeWorkItem
+          title={stepTwo.title}
+          body={stepTwo.body}
+          image={stepTwo.image}
+        />
+      );
       break;
     case "step3":
-      res = <HowWeWorkItem title={stepThree.title} body={stepThree.body} />;
+      res = (
+        <HowWeWorkItem
+          title={stepThree.title}
+          body={stepThree.body}
+          image={stepThree.image}
+        />
+      );
       break;
     case "step4":
-      res = <HowWeWorkItem title={stepFour.title} body={stepFour.body} />;
+      res = (
+        <HowWeWorkItem
+          title={stepFour.title}
+          body={stepFour.body}
+          image={stepFour.image}
+        />
+      );
       break;
     default:
   }

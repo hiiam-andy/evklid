@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import style from "../../styles/Header.module.css";
 
@@ -9,8 +10,11 @@ import SearchIcon from "../SVG/SearchIcon";
 import CloseSearch from "../SVG/CloseSearch";
 import SearchModal from "./SearchModal";
 import Menu from "./Menu";
+import { MAIN_ROUTE } from "../../Pages/PAGES";
 
 export default function Header() {
+  const navigate = useNavigate();
+
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSearch, setIsShowSearch] = useState(false);
 
@@ -39,7 +43,10 @@ export default function Header() {
 
       {isShowMenu && <Menu list={style.sideMenu} link={style.sideMenuLink} />}
 
-      <HeaderLogoSVG className={style.logo} />
+      <HeaderLogoSVG
+        className={style.logo}
+        onClick={() => navigate(MAIN_ROUTE)}
+      />
 
       <div className={style.navAndSearch}>
         <Menu list={style.navigation} link={style.navigationLink} />

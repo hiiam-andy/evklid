@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import style from "../../styles/About.module.css";
 import SmallCard from "./SmallCard";
+import { ABOUT_ROUTE } from "../../Pages/PAGES";
 
 export default function About() {
+  const navigate = useNavigate();
   return (
     <div className={style.sectionAbout}>
       <div className={style.info}>
@@ -28,7 +31,12 @@ export default function About() {
           <p className={style.bigCard__text}>
             Принимая во внимание показатели успешности, перспективное
             планирование способствует подготовке и реализации новых принципов.
-            <button className={style.bigCard__btn}>Подробнее</button>
+            <button
+              className={style.bigCard__btn}
+              onClick={() => navigate(ABOUT_ROUTE)}
+            >
+              Подробнее
+            </button>
           </p>
         </div>
         <div className={style.smallCards}>

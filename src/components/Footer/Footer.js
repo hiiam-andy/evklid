@@ -1,19 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import style from "../../styles/Footer.module.css";
 
 import FooterForm from "./FooterForm";
+import { ABOUT_ROUTE, PROJECTS_ROUTE, REVIEWS_ROUTE } from "../../Pages/PAGES";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   return (
     <footer className={style.sectionFooter}>
       <div className={style.left}>
         <div className={style.logo} />
 
         <ul className={style.navigation}>
-          <li className={style.navLink}>О нас</li>
-          <li className={style.navLink}>Проекты</li>
-          <li className={style.navLink}>Отзывы</li>
+          <li className={style.navLink} onClick={() => navigate(ABOUT_ROUTE)}>
+            О нас
+          </li>
+          <li
+            className={style.navLink}
+            onClick={() => navigate(PROJECTS_ROUTE)}
+          >
+            Проекты
+          </li>
+          <li className={style.navLink} onClick={() => navigate(REVIEWS_ROUTE)}>
+            Отзывы
+          </li>
           <li className={style.navLink}>Договор оферты</li>
           <li className={style.navLink}>Договор подряда</li>
           <li className={style.navLink}>Конфиденциальность</li>

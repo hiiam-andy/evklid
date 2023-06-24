@@ -112,7 +112,7 @@
 .sideMenu{
   display: none;
   width: 420px;
-  height: 100vh;
+  max-width: 100vw;
   padding: 170px 106px 0 60px;
   background-color: #FFFFFF;
   position: absolute;
@@ -179,5 +179,11 @@
   }
   .searchIcon{
     margin-left: 0;
+  }
+}
+
+@media(max-width:542px){
+  .searchField{
+    max-width: 320px;
   }
 }
