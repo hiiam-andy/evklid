@@ -3,39 +3,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1920px;
   padding: 14px 75px;
   background: #FFFFFF;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-}
-.hamburger{
-  cursor: pointer;
-  display: none;
-  width: 30px;
-  height: 30px;
-}
-.hamburger:hover rect{
-  fill:#ff9900
-}
-.hamburger:active rect{
-  fill:#e1670e
-}
-.XMenu{
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-}
-.XMenu:hover path{
-  fill:#ff9900
-}
-.XMenu:active path{
-  fill:#e1670e
 }
 .logo{
   width: 224px;
   height: 72px;
   cursor: pointer;
 }
-.test{
+.navAndSearch{
   display: flex;
   align-items: center;
 }
@@ -43,22 +21,22 @@
   display: flex;
   align-items: center;
 }
-.link{
+.navigationLink{
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
   color:#333;
   margin-left:3.75vw;
 }
-.link:first-child{
+.navigationLink:first-child{
   margin-left: 10px;
 }
 
-.link:hover{
+.navigationLink:hover{
   border-bottom: 2px solid #ff9900;
   cursor: pointer;
 }
-.link:active{
+.navigationLink:active{
   color: #e1670e;
   border-bottom: 2px solid #e1670e;
 }
@@ -82,7 +60,7 @@
   right: 0;
   bottom: 0;
   left:0;
-
+  
 }
 .searchField{
   position: absolute;
@@ -131,7 +109,8 @@
 }
 
 
-.menu{
+.sideMenu{
+  display: none;
   width: 420px;
   height: 100vh;
   padding: 170px 106px 0 60px;
@@ -141,14 +120,41 @@
   left: 0;
   z-index: 5;
 }
-.menuLink{
+.sideMenuLink{
   font-weight: 700;
   font-size: 24px;
   line-height: 29.26px;
   margin-bottom: 60px;
-  
+  border-bottom: 2px solid transparent;
 }
-
+.sideMenuLink:hover{
+  border-bottom: 2px solid #ff9900;
+  cursor: pointer;
+}
+.sideMenuHamburger{
+  cursor: pointer;
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+.sideMenuHamburger:hover rect{
+  fill:#ff9900
+}
+.sideMenuHamburger:active rect{
+  fill:#e1670e
+}
+.sideMenuX{
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.sideMenuX:hover path{
+  fill:#ff9900
+}
+.sideMenuX:active path{
+  fill:#e1670e
+}
 
 @media(max-width:1046px){
   .sectionHeader{
@@ -157,7 +163,13 @@
   .navigation{
     display: none;
   }
-  .hamburger{
+  .sideMenu{
+    display:block;
+  }
+  .sideMenuHamburger{
+    display: block;
+  }
+  .sideMenuX{
     display: block;
   }
   .logo { 
