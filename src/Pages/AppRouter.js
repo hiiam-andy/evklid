@@ -11,13 +11,13 @@ import Contacts from "./Contacts";
 export default function AppRouter() {
   return (
     <Routes>
-      <Route path="/main" element={<Main />} />
+      <Route path="/" element={<Main />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/reviews" element={<Reviews />} />
       <Route path="/about" element={<About />} />
       <Route path="/stages" element={<Stages />} />
       <Route path="/contacts" element={<Contacts />} />
-      <Route path="*" element={<Navigate to="/main" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
