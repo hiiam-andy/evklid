@@ -58,7 +58,7 @@ export default function HowWeWorks() {
       <h1 className={style.heading}>Как мы работаем</h1>
       <div className={style.navigation}>
         <label className={style.stepBtn}>
-          1 Шаг
+          1 шаг
           <input
             style={{ display: "none" }}
             type="radio"
@@ -68,7 +68,7 @@ export default function HowWeWorks() {
           />
         </label>
         <label className={style.stepBtn}>
-          2 Шаг
+          2 шаг
           <input
             style={{ display: "none" }}
             type="radio"
@@ -78,7 +78,7 @@ export default function HowWeWorks() {
           />
         </label>
         <label className={style.stepBtn}>
-          3 Шаг
+          3 шаг
           <input
             style={{ display: "none" }}
             type="radio"
@@ -88,7 +88,7 @@ export default function HowWeWorks() {
           />
         </label>
         <label className={style.stepBtn}>
-          4 Шаг
+          4 шаг
           <input
             style={{ display: "none" }}
             type="radio"

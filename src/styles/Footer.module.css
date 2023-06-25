@@ -1,7 +1,7 @@
 .sectionFooter{
   display: flex;
   justify-content: space-between;
-  padding: 50px 75px;
+  padding: 50px 74px;
   background-color: #222;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .message{
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   padding-top: 14px;
   height: 150px;
   resize:none;
@@ -156,6 +156,20 @@
     display: none;
   }
 }
+@media(max-width:1034px){
+  .sectionFooter{
+    padding: 49px 55px;
+  }
+  .left{
+    margin-right: 14%;
+  }
+  .logo{
+    margin-bottom: 20px;
+  }
+  .btn{
+    padding: 21px 36px;
+  }
+}
 
 @media(max-width:830px){
   .sectionFooter{
@@ -163,6 +177,16 @@
   }
   .navigation{
     display: none;
+  }
+}
+
+@media(max-width:778px){
+  .center{
+    max-width: 542px;
+    margin-bottom: 47px;
+  }
+  .check{
+    margin-left: 1px;
   }
 }
 

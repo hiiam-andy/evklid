@@ -20,9 +20,8 @@ export default function HowWeWorkItem({ title, body, image }) {
         </button>
         <button className={style.btnContract}>Договор</button>
       </div>
-      <div className={style.right}>
-        <img src={image} alt="консультация" className={style.image} />
-      </div>
+
+      <img src={image} alt="консультация" className={style.image} />
     </div>
   );
 }

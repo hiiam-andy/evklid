@@ -1,7 +1,7 @@
 
 .sectionHero{
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 102px;
   max-width: 1770px;
   min-height: 620px;
 }
@@ -42,58 +42,24 @@
 .heroBtn:active{
   background: #e1670e;
 }
-.swiper{
-  width: 100%;
-  height: 100%;
-  max-width: 1770px;
-  max-height: 620px;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  list-style:none;
-  z-index:1;
-}
-.swiper-slide {
-  background-size: cover;
-  background-position: center center;
-}
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 10px;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 27px;
-}
-.slide1{
-  background-image: url(../img/hero1.jpg);
-}
-.slide2{
-  background-image: url(../img/hero2.jpg);
-}
-.slide3{
-  background-image: url(../img/hero3.jpg);
-}
-.btn_round {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.4);
-}
 
 .sliderImage1{
   background-image: url(../img/hero1.jpg);
+  object-fit: contain;
   width: 100%;
-  height: 680px;
+  height: 620px;
 }
 
 
 
 @media(max-width:1034px){
+  .sectionHero{
+    max-width: 924px;
+    margin-bottom: 81px;
+  }
   .info{
     padding-top: 160px;
-    padding-left: 92px;
+    padding-left: 77px;
     max-width: 790px;
   }
   .infoHeading{
@@ -107,9 +73,20 @@
     font-size: 20px;
     line-height: 24.38px;
   }
+  .sliderImage1{
+    height: 663px;
+  }
 }
 
 @media(max-width:778px){
+  .sectionHero{
+    max-width: 668px;
+    height: 662px;
+  }
+  .info{
+    padding: 161px 93px 0px 40px;
+    margin-bottom: 60px;
+  }
   .infoHeading{
     font-size: 50px;
     line-height: 60.95px;
@@ -117,6 +94,7 @@
   .infoText{
     font-size: 18px;
     line-height: 21.94px;
+    margin-bottom: 61px;
   }
 }
 

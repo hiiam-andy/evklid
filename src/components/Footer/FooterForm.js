@@ -15,7 +15,7 @@ export default function FooterForm() {
           className={style.field}
           type="text"
           name="name"
-          placeholder="Фамилия, имя и отчество *"
+          placeholder="Фамилия, имя и отчество*"
           id="name"
         />
         <input

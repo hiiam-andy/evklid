@@ -1,7 +1,7 @@
 .sectionQuestions{
   max-width: 1770px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 98px;
 }
 .heading{
   margin-bottom: 43px;
@@ -25,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 29px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -69,9 +69,43 @@
 }
 
 @media(max-width:1034px){
+  .sectionQuestions{
+    max-width: 924px ;
+    margin: 0 auto;
+  }
+  .heading{
+    margin-bottom: 32px;
+  }
   .title{
     font-weight: 700;
     font-size: 20px;
+  }
+}
+
+
+@media(max-width:778px){
+  .sectionQuestions{
+    max-width: 668px;
+    margin-bottom: 80px;
+  }
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    line-height: 34px;
+  }
+  .accordion__imgActive{
+    min-width: 30px;
+    min-height: 30px;
+  }
+  .accordion__imgDisabled{
+    min-width: 30px;
+    min-height: 30px;
+  }
+  .accordion__titleText{
+    max-width: 86%;
   }
 }
 
