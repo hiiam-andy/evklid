@@ -18,7 +18,9 @@ export default function Hero() {
           Заказать расчёт
         </button>
       </div>
-      <HeroCarousel style={{ position: "absolute" }} />
+      <div>
+        <HeroCarousel style={{ position: "absolute" }} />
+      </div>
       {visible && <MyModal visible={visible} setVisible={setVisible} />}
     </div>
   );

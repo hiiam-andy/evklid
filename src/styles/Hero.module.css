@@ -42,15 +42,11 @@
 .heroBtn:active{
   background: #e1670e;
 }
-
-.sliderImage1{
-  background-image: url(../img/hero1.jpg);
-  object-fit: contain;
-  width: 100%;
+.sliderImage{
+  object-fit: cover;
+  width: auto;
   height: 620px;
 }
-
-
 
 @media(max-width:1034px){
   .sectionHero{
@@ -73,8 +69,8 @@
     font-size: 20px;
     line-height: 24.38px;
   }
-  .sliderImage1{
-    height: 663px;
+  .sliderImage{
+    height: 668px;
   }
 }
 
@@ -96,10 +92,16 @@
     line-height: 21.94px;
     margin-bottom: 61px;
   }
+  .sliderImage{
+    height: 662px;
+  }
 }
 @media(max-width:650px){
   .info{
     padding: 25px;
+  }
+  .sliderImage{
+    height: 550px;
   }
 }
 
@@ -115,5 +117,8 @@
   .heroBtn{
     font-size: 12px;
     line-height: 14.63px;
+  }
+  .sliderImage{
+    height: 308px;
   }
 }
