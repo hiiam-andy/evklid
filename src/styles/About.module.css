@@ -169,7 +169,7 @@
 
   }
   .smallCard{
-    height: 236px;
+    min-height: 236px;
     padding: 5% 6% 30% 25.4%;
   }
 }

@@ -18,3 +18,14 @@ html{
 ul{
     list-style: none;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+} 
+
+ @media(max-width:1033px){
+  .container{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+} 

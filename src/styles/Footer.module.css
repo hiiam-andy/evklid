@@ -171,23 +171,27 @@
   }
 }
 
-@media(max-width:830px){
+@media(max-width:850px){
   .sectionFooter{
     flex-direction: column-reverse;
   }
   .navigation{
     display: none;
   }
+  .form{
+    max-width: 90%;
+    margin-bottom: 47px;
+  }
 }
 
 @media(max-width:778px){
   .center{
     max-width: 542px;
-    margin-bottom: 47px;
   }
   .check{
     margin-left: 1px;
   }
+  
 }
 
 @media(max-width:330px){

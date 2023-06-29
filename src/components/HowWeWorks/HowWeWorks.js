@@ -55,50 +55,52 @@ export default function HowWeWorks() {
 
   return (
     <div className={style.sectionWork}>
-      <h1 className={style.heading}>Как мы работаем</h1>
-      <div className={style.navigation}>
-        <label className={style.stepBtn}>
-          1 шаг
-          <input
-            style={{ display: "none" }}
-            type="radio"
-            name="radio"
-            value="step1"
-            onChange={changeStep}
-          />
-        </label>
-        <label className={style.stepBtn}>
-          2 шаг
-          <input
-            style={{ display: "none" }}
-            type="radio"
-            name="radio"
-            value="step2"
-            onChange={changeStep}
-          />
-        </label>
-        <label className={style.stepBtn}>
-          3 шаг
-          <input
-            style={{ display: "none" }}
-            type="radio"
-            name="radio"
-            value="step3"
-            onChange={changeStep}
-          />
-        </label>
-        <label className={style.stepBtn}>
-          4 шаг
-          <input
-            style={{ display: "none" }}
-            type="radio"
-            name="radio"
-            value="step4"
-            onChange={changeStep}
-          />
-        </label>
+      <div className="container">
+        <h1 className={style.heading}>Как мы работаем</h1>
+        <div className={style.navigation}>
+          <label className={style.stepBtn}>
+            1 шаг
+            <input
+              style={{ display: "none" }}
+              type="radio"
+              name="radio"
+              value="step1"
+              onChange={changeStep}
+            />
+          </label>
+          <label className={style.stepBtn}>
+            2 шаг
+            <input
+              style={{ display: "none" }}
+              type="radio"
+              name="radio"
+              value="step2"
+              onChange={changeStep}
+            />
+          </label>
+          <label className={style.stepBtn}>
+            3 шаг
+            <input
+              style={{ display: "none" }}
+              type="radio"
+              name="radio"
+              value="step3"
+              onChange={changeStep}
+            />
+          </label>
+          <label className={style.stepBtn}>
+            4 шаг
+            <input
+              style={{ display: "none" }}
+              type="radio"
+              name="radio"
+              value="step4"
+              onChange={changeStep}
+            />
+          </label>
+        </div>
+        {res}
       </div>
-      {res}
     </div>
   );
 }
