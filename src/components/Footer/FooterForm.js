@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import style from "../../styles/Footer.module.css";
 
-export default function FooterForm({ check, checked }) {
+export default function FooterForm() {
+  const [checked, setChecked] = useState(false);
+
+  const check = () => {
+    setChecked(!checked);
+  };
+
   return (
     <div className={style.center}>
       <h3 className={style.centerHeading}>Оставить заявку</h3>
