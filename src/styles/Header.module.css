@@ -4,11 +4,13 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1920px;
-  padding: 14px 75px;
+  padding: 14px 5.4%;
   background: #FFFFFF;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
 .logo{
+  position: relative;
+  right:3px;
   width: 224px;
   height: 72px;
   cursor: pointer;
@@ -26,7 +28,7 @@
   line-height: 22px;
   font-weight: 600;
   color:#333;
-  margin-left:4.03vw;
+  margin-left:3.77vw;
 }
 .navigationLink:first-child{
   margin-left: 10px;
@@ -186,13 +188,11 @@
 @media(max-width:778px){
   .sectionHeader{
     height: 69px;
-    padding: 0 55px;
-  }
-  .logo{
-    margin-right: 1%;
+    padding: 0 7%;
   }
   .sideMenu{
     top: 69px;
+    padding-top: 40px;
   }
 
  
@@ -201,5 +201,14 @@
 @media(max-width:542px){
   .searchField{
     max-width: 320px;
+  }
+}
+
+@media(max-width:320px){
+  .sectionHeader{
+    padding: 0 4.6%;
+  }
+  .logo{
+    width: 110px;
   }
 }

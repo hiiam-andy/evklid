@@ -5,6 +5,7 @@ import style from "../../styles/Footer.module.css";
 
 import FooterForm from "./FooterForm";
 import { ABOUT_ROUTE, PROJECTS_ROUTE, REVIEWS_ROUTE } from "../../Pages/PAGES";
+import FooterLogoSVG from "../SVG/FooterLogoSVG";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -12,7 +13,8 @@ export default function Footer() {
   return (
     <footer className={style.sectionFooter}>
       <div className={style.left}>
-        <div className={style.logo} />
+        <FooterLogoSVG className={style.logo} />
+        {/* <div className={style.logo} /> */}
 
         <ul className={style.navigation}>
           <li className={style.navLink} onClick={() => navigate(ABOUT_ROUTE)}>

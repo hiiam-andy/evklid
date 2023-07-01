@@ -1,7 +1,7 @@
 .sectionWork{
   max-width: 1770px;
   margin: 0 auto;
-  margin-bottom: 99px;
+  margin-bottom: 67px;
 }
 .heading{
   margin-bottom: 49px;
@@ -107,7 +107,7 @@
     margin: 0 auto;
   }
   .heading{
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
   .navigation{
     margin-bottom: 50px;
@@ -120,10 +120,10 @@
   }
   .slide__text{
     margin-bottom: 23px;
-    padding: 0 13px 0 2px ;
+    padding-right: 3.3%;
   }
   .image{
-    width: 47%;
+    width: 47.2%;
     max-height: 699px;
   }
 }
@@ -152,8 +152,8 @@
 
 @media(max-width: 778px){
   .sectionWork{
-    max-width: 668px;
-    margin-bottom: 142px;
+    max-width: 698px;
+    margin-bottom: 110px;
   }
   .heading{
     margin-bottom: 49px;
@@ -171,18 +171,38 @@
   .slide__description{
     width: 100%;
   }
+  .slide__text{
+    padding: 0;
+  }
   .btnMore{
     margin-right: 31px;
+    padding: 3.2% 5.7%;
   }
 }
 
 @media(max-width:330px){
+  .sectionWork{
+    margin-bottom: 44px;
+  }
   .heading{
     font-size: 24px;
     line-height: 29.26px;
+    margin-bottom: 21px;
   }
   .stepBtn{
     margin-right: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .navigation{
+    margin-bottom: 5px;
+  }
+  .image{
+    min-height: 170px;
+    margin-bottom: 16px;
+  }
+  .slider{
+    height: auto;
   }
   .slide__heading{
     font-weight: 500;
@@ -191,13 +211,17 @@
   .slide__text{
     font-size: 14px;
     line-height: 28px;
+    margin-bottom: 16px;
   }
   .btnMore{
     font-size: 12px;
     line-height: 14.63px;
+    padding: 4.4% 15.1%;
+    margin-right: 4%;
   }
   .btnContract{
     font-size: 12px;
     line-height: 14.63px;
+    padding: 4% 10.6%;
   }
 }

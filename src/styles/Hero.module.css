@@ -1,7 +1,6 @@
-
 .sectionHero{
   margin: 0 auto;
-  margin-bottom: 102px;
+  margin-bottom: 65px;
   max-width: 1770px;
   min-height: 620px;
 }
@@ -30,7 +29,7 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  padding:24px 36px;
+  padding:4% 6%;
   color:#FFFFFF;
   background-color: #ff9900;
   border:none;
@@ -51,7 +50,7 @@
 @media(max-width:1034px){
   .sectionHero{
     max-width: 924px;
-    margin-bottom: 81px;
+    margin-bottom: 44px;
   }
   .info{
     padding-top: 160px;
@@ -76,8 +75,9 @@
 
 @media(max-width:778px){
   .sectionHero{
-    max-width: 668px;
+    max-width: 698px;
     height: 662px;
+    margin-bottom: 49px;
   }
   .info{
     padding: 161px 93px 0px 40px;
@@ -106,17 +106,32 @@
 }
 
 @media(max-width:330px){
+  .sectionHero{
+    min-height: 300px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19% 11.5% 0% 7%;
+    text-align: center;
+  }
   .infoHeading{
     font-size: 20px;
     line-height: 24.38px;
+    margin-bottom: 7px;
   }
   .infoText{
     font-size: 12px;
     line-height: 14.63px;
+    margin-bottom: 33px;
   }
   .heroBtn{
     font-size: 12px;
     line-height: 14.63px;
+    padding: 5% 11%;
   }
   .sliderImage{
     height: 308px;

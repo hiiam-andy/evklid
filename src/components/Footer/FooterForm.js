@@ -36,7 +36,7 @@ export default function FooterForm() {
           <button type="submint" className={style.btn}>
             Отправить данные
           </button>
-          <label className={style.check}>
+          <label className={style.checkLabel}>
             <input type="checkbox" name="check" className={style.check} />
             <span className={style.checkboxText}>
               Согласен на обработку данных

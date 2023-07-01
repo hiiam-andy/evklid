@@ -1,7 +1,7 @@
 .sectionAbout{
   max-width: 1770px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 69px;
 }
 .info{
   margin-bottom: 50px;
@@ -50,7 +50,7 @@
 }
 .bigCard__btn{
   margin-left: 18%;
-  padding:18px 35px;
+  padding:3% 6%;
   border: 3px solid #ff9900;
   font-size: 16px;
   line-height: 19px;
@@ -72,24 +72,24 @@
   justify-content: space-between;
 }
 .smallCard{
+  display: flex;
   border: 1px solid #CACACA;
   background-repeat: no-repeat;
   background-position: 8.3% 48%;
   background-size: 22%;
-  padding:7% 10.4% 7.3% 34.4%;
+  padding: 7.1% 11% 7.4% 6.8%;
 }
-.cardTop{
-  background-image: url(../img/about2.svg);
-  margin-bottom: 20px;
+
+.smallCard__image{
+  margin-right: 6.8%;
+  object-fit: contain;
 }
-.cardBottom{
-  background-image: url(../img/about3.svg);
-}
+
 .smallCard__heading{
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .smallCard__text{
   font-size: 16px;
@@ -116,6 +116,7 @@
   .smallCards{
     width: 100%;
   }
+  
 
 }
 
@@ -123,7 +124,7 @@
   .sectionAbout{
     margin: 0 auto;
     max-width: 925px;
-    margin-bottom: 49px;
+    margin-bottom: 17px;
   }
   .heading{
     margin-bottom: 9px;
@@ -143,16 +144,16 @@
     margin-left: 19%;
   }
   .smallCard{
-    height: 295px;
     margin-bottom: 32px;
-    padding: 6.9% 14.4% 24.3% 34.4%;
+    padding: 7.1% 14% 6.7% 8.31%
   }
 }
 
 
 @media(max-width:778px){
   .sectionAbout{
-    max-width: 667px;
+    max-width: 698px;
+    margin-bottom: 16px;
   }
   .info{
     margin-bottom: 60px;
@@ -170,41 +171,76 @@
   }
   .smallCard{
     min-height: 236px;
-    padding: 5% 6% 30% 25.4%;
+    padding: 5.2% 4% 5% 5.8%;
+  }
+  .smallCard__image{
+    max-width: 19%;
+    margin-right: 2.6%;
   }
 }
 
 @media(max-width:330px){
+  .sectionAbout{
+    margin-bottom: 21px;
+  }
   .heading{
     font-size: 24px;
     line-height: 29.26px;
+    margin-bottom: 19px;
+  }
+  .info{
+    margin-bottom: 14px;
   }
   .text{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 28px;
+  }
+  .bigCard{
+    height: 200px;
+    margin-bottom: 221px;
   }
   .bigCard__text{
     flex-direction: column;
-    font-weight: 400px;
+    align-items: flex-start;
+    font-weight: 400;
     font-size: 14px;
     line-height: 28px;
+    color: #333;
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 208px 0;
   }
   .bigCard__btn{
     font-size: 12px;
     line-height: 14.63px;
+    margin: 10px 0 0 0;
+    padding: 4% 14.6%;
+    color: #ff9900;
+    border: 2px solid #ff9900;
   }
   .smallCard{
-    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
     border: none;
+    margin-bottom: 23px;
   }
   .smallCard__heading{
     font-weight: 500;
     font-size: 18px;
     line-height: 21.94px;
+    margin-bottom: 3px;
   }
   .smallCard__text{
     font-size: 14px;
     line-height: 28px;
+  
+  }
+  .smallCard__image{
+    max-width: 23%;
+    margin-bottom: 5px;
+    padding: 9px 0 0 0;
   }
 }

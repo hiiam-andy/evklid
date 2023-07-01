@@ -6,6 +6,31 @@ import SmallCard from "./SmallCard";
 import { ABOUT_ROUTE } from "../../Pages/PAGES";
 
 export default function About() {
+  const smalCardsContent = [
+    {
+      image: require("../../img/smallCard1.png"),
+      alt: "img1",
+      title: "Консультация с широким активом",
+      body: "А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений",
+    },
+    {
+      image: require("../../img/smallCard2.png"),
+      alt: "img2",
+      title: "В своём стремлении повысить",
+      body: "Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.",
+    },
+  ];
+  const smallCards = smalCardsContent.map((smalCard) => {
+    return (
+      <SmallCard
+        title={smalCard.title}
+        body={smalCard.body}
+        image={smalCard.image}
+        alt={smalCard.alt}
+      />
+    );
+  });
+
   const navigate = useNavigate();
   return (
     <div className={style.sectionAbout}>
@@ -40,19 +65,7 @@ export default function About() {
               </button>
             </p>
           </div>
-          <div className={style.smallCards}>
-            <SmallCard
-              title="Консультация с широким активом"
-              body="А также свежий взгляд на привычные вещи - 
-            безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений"
-            />
-            <SmallCard
-              title="В своём стремлении повысить"
-              body="Качество жизни, они забывают, 
-            что сплочённость команды профессионалов представляет собой 
-            интересный эксперимент проверки прогресса профессионального сообщества."
-            />
-          </div>
+          <div className={style.smallCards}>{smallCards}</div>
         </div>
       </div>
     </div>

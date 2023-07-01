@@ -15,8 +15,6 @@
 }
 .logo{
   margin-bottom: 20px;
-  background-image: url(../img/Logo-footer.svg);
-  background-repeat: no-repeat;
   width: 224px;
   height: 72px;
   cursor: pointer;
@@ -158,7 +156,7 @@
 }
 @media(max-width:1034px){
   .sectionFooter{
-    padding: 49px 55px;
+    padding: 4.8% 5.6% 4.8% 5.1%;
   }
   .left{
     margin-right: 14%;
@@ -168,6 +166,9 @@
   }
   .btn{
     padding: 21px 36px;
+  }
+  .message{
+    margin-bottom: 30px;
   }
 }
 
@@ -185,30 +186,73 @@
 }
 
 @media(max-width:778px){
+  .sectionFooter{
+    padding-top: 6.6%;
+    padding-left: 7.1%;
+  }
   .center{
-    max-width: 542px;
+    max-width: 678px;
   }
   .check{
     margin-left: 1px;
   }
+  .form{
+    max-width: 79.8%;
+  }
+  .logo{
+    margin-bottom: 15px;
+  }
+  .centerHeading{
+    margin-bottom: 25px;
+  }
+ 
   
 }
 
 @media(max-width:330px){
+  .sectionFooter{
+    padding: 10% 4.9%;
+  }
   .centerHeading{
     font-size: 24px;
     line-height: 29.26px;
+    margin-bottom: 20px;
   }
-  .sectionFooter{
-    padding: 5px;
+  .form{
+    max-width: 100%;
+    margin-bottom: 38px;
   }
   .application{
     flex-direction: column;
+  }
+  .field{
+    padding-left: 20px;
+    margin-bottom: 24px;
   }
   .field::placeholder{
     font-size: 14px;
   }
   .btn{
-    font-size: 14px;
+    font-size: 12px;
+    margin: 5px 0 17px;
+    padding: 5% 10%;
+    border: none;
+  }
+  .left{
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .logo{
+    max-width: 131px;
+    max-height: 42px;
+    margin-bottom: 16px;
+  }
+  .socialLink{
+    width: 40px;
+    height: 40px;
+  }
+  .socialLink:not(:last-child){
+    margin-right: 16px;
   }
 }

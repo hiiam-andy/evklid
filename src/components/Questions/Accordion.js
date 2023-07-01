@@ -11,8 +11,9 @@ const Accordion = ({ title, content }) => {
         <div className={style.accordion__titleText}>{title}</div>
 
         {isActive ? (
-          <div className={style.accordion__imgActive}>
+          <div className={style.accordion__img}>
             <svg
+              className={style.accordion__imgActive}
               width="50"
               height="50"
               viewBox="0 0 50 50"
@@ -29,8 +30,9 @@ const Accordion = ({ title, content }) => {
             </svg>
           </div>
         ) : (
-          <div className={style.accordion__imgDisabled}>
+          <div className={style.accordion__img}>
             <svg
+              className={style.accordion__imgDisabled}
               width="50"
               height="50"
               viewBox="0 0 50 50"
