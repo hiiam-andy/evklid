@@ -7,7 +7,6 @@ import HeaderLogoSVG from "../SVG/HeaderLogoSVG";
 import HamburgerSVG from "../SVG/HamburgerSVG";
 import XSVG from "../SVG/XSVG";
 import SearchIcon from "../SVG/SearchIcon";
-import CloseSearch from "../SVG/CloseSearch";
 import SearchModal from "./SearchModal";
 import Menu from "./Menu";
 import { MAIN_ROUTE } from "../../Pages/PAGES";
