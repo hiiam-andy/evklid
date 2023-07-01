@@ -41,7 +41,7 @@ export default function Header() {
         <XSVG className={style.sideMenuX} onClick={() => showMenu()} />
       )}
 
-      {isShowMenu && <Menu list={style.sideMenu} link={style.sideMenuLink} />}
+      {isShowMenu && <Menu list={style.sideMenu} link={style.sideMenu__link} />}
 
       <HeaderLogoSVG
         className={style.logo}
