@@ -54,13 +54,6 @@ export default function Header() {
           className={style.searchIcon}
           onClick={() => showSearch("open")}
         />
-        {isShowSearch && (
-          <CloseSearch
-            className={style.closeSearch}
-            onClick={() => showSearch("close")}
-          />
-        )}
-
         {isShowSearch && <SearchModal showSearch={showSearch} />}
       </div>
     </header>

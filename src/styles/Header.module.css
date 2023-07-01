@@ -1,5 +1,4 @@
 .sectionHeader{
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +15,7 @@
   cursor: pointer;
 }
 .navAndSearch{
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -57,28 +57,27 @@
   fill: #ff9900;
 }
 .searchContainer{
-  position:fixed;
-  top:0;
-  right: 0;
-  bottom: 0;
-  left:0;
+  position:relative;
   
 }
 .searchField{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  padding: 16px 32px ;
-  width: 539px;
+  padding: 16px 1vw 16px 2vw ;
+  width: 30vw;
   height: 60px;
   background-color: #FFFFFF;
   border-radius: 24px ;
   box-shadow: 0 0 20px 20px #CACACA ;
-  top: 20px;
-  right:0px;
+  top: -30px;
+  right: -55px;
   z-index: 1;
 }
 .searchInput{
   padding: 5px;
-  width: 400px;
+  width: 80%;
   border:none;
   border-bottom: 1px solid #CACACA ;
 }
@@ -91,9 +90,6 @@
   line-height: 21.94px;
 }
 .closeSearch{
-  position: absolute;
-  top: 37px;
-  right:31px;
   z-index: 2;
   cursor: pointer;
 }
@@ -185,6 +181,13 @@
   .searchIcon{
     margin-left: 0;
   }
+  .searchField{
+    width: 55vw;
+  }
+  .closeSearch{
+    right:0;
+    left:130%
+  }
 }
 
 @media(max-width:778px){
@@ -197,12 +200,21 @@
     padding-top: 40px;
   }
 
- 
+  .searchField{
+    right: -37px;
+  }
 }
 
 @media(max-width:565px){
   .searchField{
-    max-width: 70%;
+    max-width: initial;
+    width: 100vw;
+    height: 69px;
+    padding-left: 7vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    right: -7vw;
+    top: -35px;
   }
   .sideMenu__link{
     font-size: 16px;
