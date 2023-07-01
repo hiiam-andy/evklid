@@ -23,6 +23,7 @@ export default function About() {
   const smallCards = smalCardsContent.map((smalCard) => {
     return (
       <SmallCard
+        key={smalCard.title}
         title={smalCard.title}
         body={smalCard.body}
         image={smalCard.image}

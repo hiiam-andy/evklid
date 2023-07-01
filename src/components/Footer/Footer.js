@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import style from "../../styles/Footer.module.css";
@@ -8,13 +8,19 @@ import { ABOUT_ROUTE, PROJECTS_ROUTE, REVIEWS_ROUTE } from "../../Pages/PAGES";
 import FooterLogoSVG from "../SVG/FooterLogoSVG";
 
 export default function Footer() {
+  const [checked, setChecked] = useState(false);
+
+  const check = () => {
+    setChecked(!checked);
+    console.log("yep");
+  };
+
   const navigate = useNavigate();
 
   return (
     <footer className={style.sectionFooter}>
       <div className={style.left}>
         <FooterLogoSVG className={style.logo} />
-        {/* <div className={style.logo} /> */}
 
         <ul className={style.navigation}>
           <li className={style.navLink} onClick={() => navigate(ABOUT_ROUTE)}>
@@ -100,7 +106,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <FooterForm />
+      <FooterForm check={check} checked={checked} />
 
       <p className={style.text}>
         Высокий уровень вовлечения представителей целевой аудитории является

@@ -123,11 +123,14 @@
 .btn:active{
   background-color: #E1670E;
 }
-.check{
-  margin-right: 2px;
+.checkLabel{
   cursor: pointer;
 }
+.check{
+  display:none;
+}
 .checkboxText{
+  margin-left: 3px;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
@@ -205,8 +208,6 @@
   .centerHeading{
     margin-bottom: 25px;
   }
- 
-  
 }
 
 @media(max-width:565px){
