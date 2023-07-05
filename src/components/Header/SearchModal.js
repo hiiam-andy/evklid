@@ -14,7 +14,7 @@ export default function SearchModal({ isShowSearch, showSearch }) {
         onClick={(e) => e.stopPropagation()}
       >
         <input className={style.searchInput} placeholder="Что будем искать?" />
-        <SearchIcon className={style.searchIcon} />
+        <SearchIcon className={style.searchIcon__modal} />
         <CloseSearchSVG
           className={style.closeSearch}
           onClick={() => showSearch("close")}
