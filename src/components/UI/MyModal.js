@@ -1,17 +1,20 @@
 import React from "react";
-import cl from "../../styles/MyModal.module.css";
+import style from "../../styles/MyModal.module.css";
 import FooterForm from "../Footer/FooterForm";
 
 const MyModal = ({ visible, setVisible }) => {
-  const rootClasses = [cl.myModal];
+  const rootClasses = [style.myModal];
 
   if (visible) {
-    rootClasses.push(cl.active);
+    rootClasses.push(style.active);
   }
 
   return (
     <div className={rootClasses.join(" ")} onClick={() => setVisible(false)}>
-      <div className={cl.myModalContent} onClick={(e) => e.stopPropagation()}>
+      <div
+        className={style.myModalContent}
+        onClick={(e) => e.stopPropagation()}
+      >
         <FooterForm />
       </div>
     </div>

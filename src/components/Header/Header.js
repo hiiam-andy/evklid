@@ -8,7 +8,7 @@ import HamburgerSVG from "../SVG/HamburgerSVG";
 import XSVG from "../SVG/XSVG";
 import SearchIcon from "../SVG/SearchIcon";
 import SearchModal from "./SearchModal";
-import Menu from "./Menu";
+import SideMenu from "./SideMenu";
 import { MAIN_ROUTE } from "../../Pages/PAGES";
 
 export default function Header() {
@@ -40,7 +40,10 @@ export default function Header() {
         <XSVG className={style.sideMenuX} onClick={() => showMenu()} />
       )}
 
-      {isShowMenu && <Menu list={style.sideMenu} link={style.sideMenu__link} />}
+      <SideMenu
+        list={[style.sideMenu, isShowMenu ? style.menuIsActive : ""].join(" ")}
+        link={style.sideMenu__link}
+      />
 
       <HeaderLogoSVG
         className={style.logo}
@@ -48,12 +51,12 @@ export default function Header() {
       />
 
       <div className={style.navAndSearch}>
-        <Menu list={style.navigation} link={style.navigationLink} />
+        <SideMenu list={style.navigation} link={style.navigationLink} />
         <SearchIcon
           className={style.searchIcon}
           onClick={() => showSearch("open")}
         />
-        {isShowSearch && <SearchModal showSearch={showSearch} />}
+        <SearchModal isShowSearch={isShowSearch} showSearch={showSearch} />
       </div>
     </header>
   );

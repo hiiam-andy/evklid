@@ -1,13 +1,21 @@
 import React from "react";
 import style from "../../styles/Header.module.css";
-import CloseSearch from "../SVG/CloseSearch";
+import CloseSearchSVG from "../SVG/CloseSearchSVG";
+import SearchIcon from "../SVG/SearchIcon";
 
-export default function SearchModal({ showSearch }) {
+export default function SearchModal({ isShowSearch, showSearch }) {
   return (
     <div className={style.searchContainer}>
-      <div className={style.searchField} onClick={(e) => e.stopPropagation()}>
+      <div
+        className={[
+          style.searchField,
+          isShowSearch ? style.searchIsActive : "",
+        ].join(" ")}
+        onClick={(e) => e.stopPropagation()}
+      >
         <input className={style.searchInput} placeholder="Что будем искать?" />
-        <CloseSearch
+        <SearchIcon className={style.searchIcon} />
+        <CloseSearchSVG
           className={style.closeSearch}
           onClick={() => showSearch("close")}
         />
