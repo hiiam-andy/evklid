@@ -76,7 +76,7 @@
 @media(max-width:778px){
   .sectionHero{
     max-width: 698px;
-    height: 662px;
+    /* height: 662px; */
     margin-bottom: 49px;
   }
   .info{

@@ -34,7 +34,7 @@
 }
 .slide__description{
   width: 50%;
-  max-width: 760px;
+  max-width: 868px;
 }
 .slide__heading{
   margin-bottom: 8px;
@@ -113,7 +113,7 @@
     margin-bottom: 50px;
   }
   .slider{
-    height: 748px ;
+    max-height: auto ;
   }
   .slide__description{
     width:49%;

@@ -50,7 +50,9 @@ const Accordion = ({ title, content }) => {
           </div>
         )}
       </div>
-      {isActive && <div className={style.content}>{content}</div>}
+      <div className={`${style.content} ${isActive && style.active}`}>
+        {content}
+      </div>
     </div>
   );
 };

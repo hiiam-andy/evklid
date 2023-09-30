@@ -10,8 +10,8 @@
 .logo{
   position: relative;
   right:3px;
-  width: 224px;
-  height: 72px;
+  max-width: 224px;
+  max-height: 72px;
   cursor: pointer;
 }
 .navAndSearch{
@@ -200,7 +200,7 @@ top:-30px
 @media(max-width:778px){
   .sectionHeader{
     height: 69px;
-    padding: 0 7%;
+    padding: 0 8%;
   }
   .sideMenu{
     width:67%;

@@ -15,7 +15,7 @@
 
 .item{
   width:100%;
-  
+  overflow: hidden;
 }
 
 .title{
@@ -47,11 +47,16 @@
 
 .content{
   max-width: 1003px;
-  border:none; /*бордер текста*/
+  max-height:0;
+  border:none;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  
+  transition: max-height 0.2s;
+}
+.content.active{
+  max-height:812px;
+  transition: max-height 0.5s;
 }
 
 .accordion__imgDisabled{
@@ -147,6 +152,10 @@
   .accordion__imgDisabled{
     max-width: 30px;
     max-height: 30px;
+  }
+  .content{
+    font-size: 14px;
+    line-height: 28px;
   }
 
 }
